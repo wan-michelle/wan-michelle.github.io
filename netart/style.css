@@ -6,9 +6,23 @@ h1 {
   display: flex;
 }
 
+#theHead {
+  background-color: Bisque;
+  height: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#theBody {
+  background-color: MediumBlue;
+  height: 20vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #salmon {
   display: flex;
-  height: 40vh;
+  height: 20vh;
 }
 
 #coffee {
