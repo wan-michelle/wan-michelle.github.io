@@ -1,0 +1,20 @@
+h1 {
+  font-family: verdana;
+}
+
+#beachBackground {
+  display: flex;
+}
+
+#salmon {
+  display: flex;
+  height: 40vh;
+}
+
+#coffee {
+  display: flex;
+}
+
+#video {
+  width: 400;
+}
