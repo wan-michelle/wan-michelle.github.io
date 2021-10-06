@@ -1,0 +1,45 @@
+h1 {
+  style: font-family: verdana;
+  align: center;
+}
+
+h5 {
+  style: font-family: verdana;
+  font-style: italic;
+  color: gray;
+  text-align: center;
+}
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.para1 {
+  font-family: courier;
+  font-size: 20px;
+  background-color: azure;
+
+}
+
+.img1 {
+  width: 330px;
+  align: center;
+}
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.para2 {
+  font-family: courier;
+  font-size: 20px;
+  background-color: lavender;
+}
+
+.img2 {
+  width: 450px
+  align: center;
+}
