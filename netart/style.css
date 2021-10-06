@@ -1,9 +1,12 @@
 h1 {
   font-family: verdana;
+  text-align: center;
 }
 
 #beachBackground {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #theHead {
@@ -27,6 +30,7 @@ h1 {
 
 #coffee {
   display: flex;
+  background-color: White;
 }
 
 #video {
