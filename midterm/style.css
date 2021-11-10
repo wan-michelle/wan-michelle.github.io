@@ -1,0 +1,235 @@
+nav {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 30vh;
+  padding-right: 3vh;
+  padding-left: 10%;
+  text-align: right;
+  line-height: 1.3;
+  font-family: 'Lato', sans-serif;
+  background-color: rgba(100,149,237,0.2);
+}
+
+.item a {
+  text-decoration: none;
+}
+
+.item a:hover, .item a:hover::after {
+  color: white;
+}
+
+
+.item a:active {
+  color: white;
+}
+
+/* #item a:hover, #item a:hover::after{
+  color: blue;
+} */
+
+main {
+  font-family: 'Lato', sans-serif;
+}
+
+.index-grid {
+  display: grid;
+  grid-template-rows: 30vh auto auto auto auto;
+  grid-template-columns: 55vh 800px;
+}
+
+#logo {
+  width: 200px;
+}
+
+#hello {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  font-size: 45px;
+}
+
+#para {
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+
+#girl {
+  width: 800px;
+  grid-column-start: 2;
+  grid-row-start: 4;
+}
+
+.gd-grid {
+  display: grid;
+  grid-template-rows: 30vh repeat(5,auto);
+  grid-template-columns: 55vh 1fr;
+}
+
+#gd-title {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  font-size: 45px;
+}
+
+#book {
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+
+#book-para {
+  grid-column-start: 2;
+  grid-row-start: 4;
+}
+
+#book-tools {
+  grid-column-start: 2;
+  grid-row-start: 5;
+}
+
+#hk {
+  grid-column-start: 2;
+  grid-row-start: 6;
+}
+
+#hk img {
+  width: 400px;
+}
+
+.mag-grid {
+  display: grid;
+  grid-template-rows: 30vh repeat(4,auto);
+  grid-template-columns: 55vh 1fr;
+}
+
+#mag-title {
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+#mag-para {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+#mag-tools {
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+
+#mag {
+  grid-column-start: 2;
+  grid-row-start: 4;
+}
+
+#mag img {
+  width: 400px;
+}
+
+.mocked-grid {
+  display: grid;
+  grid-template-rows: 30vh repeat(4,auto);
+  grid-template-columns: 55vh 1fr;
+}
+
+#mocked-title {
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+#mocked-para {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+#mocked-tools {
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+
+#mocked {
+  grid-column-start: 2;
+  grid-row-start: 4;
+  align-self: flex-start;
+}
+
+#mocked img {
+  width: 400px;
+}
+
+.ybook-grid {
+  display: grid;
+  grid-template-rows: 30vh repeat(4,auto);
+  grid-template-columns: 55vh 1fr;
+}
+
+#ybook-title {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+#ybook-para {
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+
+
+#ybook-tools {
+  grid-column-start: 2;
+  grid-row-start: 4;
+}
+
+#ybook {
+  grid-column-start: 2;
+  grid-row-start: 5;
+}
+
+#ybook img {
+  width: 400px;
+}
+
+.illus-grid {
+  display: grid;
+  grid-template-rows: 30vh repeat(4,auto);
+  grid-template-columns: 55vh 1fr;
+}
+
+#big-title {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  font-size: 45px;
+}
+
+#illus-title {
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+
+#illus-para {
+  grid-column-start: 2;
+  grid-row-start: 4;
+}
+
+
+#illus-tools {
+  grid-column-start: 2;
+  grid-row-start: 5;
+}
+
+#illus {
+  grid-column-start: 2;
+  grid-row-start: 6;
+}
+
+#illus img {
+  width: 400px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  nav {padding-top: 15px;}
+  nav a {font-size: 12px;}
+  img {width: 200px;}
+}
