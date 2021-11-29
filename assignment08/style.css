@@ -1,0 +1,17 @@
+body {
+  background-color: #000000;
+}
+
+svg {
+  display: block;
+  width: 500px;
+}
+
+div {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  width: 150px;
+  height: 150px;
+  background-color: #ffffff;
+}
