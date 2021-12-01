@@ -11,5 +11,21 @@ body {
 }
 
 .palettes img {
-  width: 8em;
+  width: 50em;
+}
+
+.wireframe img {
+  width: 50em;
+}
+
+a .next {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+a .back {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
 }
