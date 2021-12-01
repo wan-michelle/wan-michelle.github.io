@@ -1,0 +1,15 @@
+body {
+  text-align: center;
+  font-family: monospace;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+
+.viz img {
+  width: 20em;
+}
+
+.palettes img {
+  width: 8em;
+}
