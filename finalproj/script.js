@@ -1,41 +1,71 @@
-const clearButton = document.getElementById('clear');
-clearButton.addEventListener('click',clear);
+var x = [];
+var y = [];
+var w = 33.5;
+var color = [];
 
-var lastClicked;
-var grid = clickGrid(20,20,function(elem,row,col,i){
+function setup() {
 
-    switch (elem.className){
-        case (''):
-            elem.className = 'clicked';
-            break;
-        }
+    const red = createButton('red');
+    red.mousePressed(redfill);
 
-        lastClicked = elem;
-});
+    const saveButton = createButton('Save Avatar');
+    saveButton.mousePressed(() => save(canvas, 'Avatar.jpg'));
 
-document.body.appendChild(grid);
-     
-function clickGrid(rows,cols,callback){
-    var i = 0;
-    var grid = document.createElement('table');
-    grid.className = 'grid';
-    for (var r = 0;r < rows;++r){
-        var tr = grid.appendChild(document.createElement('tr'));
-        for (var c = 0;c < cols;++c){
-            var cell = tr.appendChild(document.createElement('td'));
-            cell.addEventListener('click',(function(elem,r,c,i){
-                return function(){
-                    callback(elem,r,c,i);
-                }
-            })(cell,r,c,i),false);
-        }
+    var canvas = createCanvas(700, 700);
+    for (var i = 0; i < 20; i++) {
+        x[i] = w + i * w;
+        y[i] = w + i * w;
     }
-    return grid;
+
+    //color in each cell = true
+    for (var i = 0; i < 400; i++) {
+        color[i] = true;
+    }
+
+
 }
 
 
- function clear() {
-    elem.className = 'clear';
- }
+function draw() {
+    clear();
+    rectMode(CENTER);
+    stroke(200);
+    for (var j = 0; j < y.length; j++) {
+        for (var i = 0; i < 20; i++) {
+            if (color[j * 20 + i]) {
+                fill(255);
+            // } else if red.mousePressed(){
+            //     redfill();
+            } else if {
+                
 
- $('.carousel').carousel()
+            } else {
+                fill(0);
+            }
+
+            
+            rect(x[i], y[j], w, w);
+        }
+    }
+}
+
+function mousePressed() {
+    for (var i = 0; i < 20; i++) {
+        for (var j = 0; j < 20; j++) {
+            var dis = dist(mouseX, mouseY, x[i], y[j]);
+            if (dis < w/2) {
+                color[j * 20 + i] =! color[j * 20 + i];
+            }
+        }
+    }
+
+
+}
+
+function redfill() {
+    fill(255,0,0);
+}
+
+function clear() {
+
+}
