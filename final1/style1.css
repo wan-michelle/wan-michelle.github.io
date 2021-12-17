@@ -1,0 +1,13 @@
+h1 {
+    font-size: 50px;
+}
+
+body {
+    color: black;
+    font-family: sans-serif;
+    text-align: center;
+    background: linear-gradient(180deg, aliceblue, powderblue);}
+
+.examples img{
+    width: 220px;
+}
